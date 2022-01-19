@@ -20,7 +20,7 @@ $indexes = ['characters', 'comics', 'movies', 'tv', 'games', 'collectibles', 'vi
     <div class="nav">
         <div class="container_main d-flex justify-content-between align-items-center">
             <div class="logo">
-                {{-- <img src="{{ asset('img/dc-logo.png') }}" alt=""> --}}
+                <img src="{{ asset('img/dc-logo.png') }}" alt="">
             </div>
 
             <ul class="index d-flex list-unstyled align-items-center justify-content-evenly">

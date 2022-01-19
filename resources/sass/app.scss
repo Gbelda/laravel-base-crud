@@ -45,16 +45,19 @@ header{
             width: 100%;
             margin-bottom: 0%;
             padding: 0% 2rem;
+
         
             li{
                 list-style: none;
                 color: $nav_text_primary_color;
                 padding-bottom: 2.8rem;
                 font-weight: 600;
+                border-bottom: 4px solid transparent;
 
                 &:hover{
                   color: $highlight_primary_color;
                   border-bottom: 4px solid $highlight_primary_color;
+                  cursor: pointer;
                 }
         
             }
@@ -108,6 +111,16 @@ header{
     background-image: url(../img/jumbotron.jpg);
     background-size: cover;
     background-position-x: center;
+}
+
+.main{
+    background-image: url(https://www.dccomics.com/sites/default/files/dc-hero_20220118_SM%26L_AdamRayner_61e75463336029.38162354.jpg);
+    width: 100vw;
+    height: calc(100vh - 127px);
+
+    .content{
+        margin-top: -3rem;
+    }
 }
 
 footer{
