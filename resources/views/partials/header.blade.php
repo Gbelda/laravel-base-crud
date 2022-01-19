@@ -26,10 +26,9 @@ $indexes = ['characters', 'comics', 'movies', 'tv', 'games', 'collectibles', 'vi
             <ul class="index d-flex list-unstyled align-items-center justify-content-evenly">
                 @foreach ($indexes as $index)
                     <li class="">
-                        {{-- <a href="{{ route("$index") }}"
-                            id="{{ str_contains(Route::currentRouteName(), $index) ? 'active' : '' }}"> --}}
-                        {{ strtoupper($index) }}
-                        {{-- </a> --}}
+                        <a href="#">
+                            {{ strtoupper($index) }}
+                        </a>
                     </li>
                 @endforeach
             </ul>
