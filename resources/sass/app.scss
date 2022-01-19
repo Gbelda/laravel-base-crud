@@ -302,3 +302,196 @@ footer{
       width: 40px;
     }
   }
+
+
+  /***********************************************************************************
+                                    SHOW COMIC
+  ***********************************************************************************/
+  .highlight_bg{
+    height: 60px;
+    background-color: $highlight_primary_color;
+}
+
+.content_container{
+    width: 55%;
+    margin: auto;
+}
+
+.content_header{
+    margin-top: -17.5rem;
+}
+
+
+.poster{
+
+    border: 1px solid white;
+    width: 175px;
+    position: relative;
+    margin-top: 15rem;
+
+    img{
+        width: 100%;
+    }
+
+    .sticker,
+    .gallery{
+        font-size: .8rem;
+        position: absolute;
+        color: white;
+        margin: 0;
+        background-color: #00A9D9;
+    }
+    
+    .sticker{
+        top: 0%;
+        left: 0%;
+        padding: 0% 5px;
+    }
+
+    .gallery{
+        width: 100%;
+        bottom: 0%;
+        text-align: center;
+        padding: 2px 0%;
+    }
+
+}
+
+.main_content{
+
+    margin-bottom: 4rem;
+    
+    .comic_title{
+        color: $comic_title_color;
+        font-weight: 600;
+        font-size: 1.7rem;
+
+    }
+
+    .price_info{
+        width: 100%;
+        background-color: $status_available_color;
+        height: 40px;
+        border-bottom: .5px solid rgb(80, 80, 80);
+        margin-bottom: 1rem;
+
+        h6{
+            margin: 0;
+            font-weight: 600;
+            font-size: .95rem;
+        }
+
+        .status{
+            h6{
+                color: $price_highlight;
+            }
+
+            .price{
+                color: white;
+            }
+        }
+
+        .availability{
+            border-left: .5px solid rgb(80, 80, 80);
+
+            h6{
+                color: white;
+            }
+        }
+    }
+
+    .comic_text{
+        font-size: 1rem;
+
+    }
+
+    // .advert{
+    //     img{
+    //         width: 100%;
+    //     }
+
+    //     h6{
+    //         font-weight: 600;
+    //         color: $nav_text_primary_color;
+    //     }
+    // }
+
+}
+
+.specifics{
+    padding-bottom: 5rem;
+    background-color: $comic_specs_bg;
+    border-top: 1px solid rgb(207, 207, 207);
+    border-bottom: 1px solid rgb(207, 207, 207);
+
+
+    h2{
+        font-size: 1.4rem;
+        font-weight: 600;
+        color: $comic_title_color;
+        border-bottom: 1px solid rgb(209, 209, 209);
+        padding-bottom: 2rem;
+        padding-top: 1.5rem;
+    }
+
+    h6{
+        color: $comic_title_color;
+        margin: 0;
+    }
+    
+    .artists,
+    .writers{
+        font-size: .8rem;
+        line-height: 1rem;
+
+        a{
+            color: $comic_highlight_color
+        }
+    }
+
+    .art,
+    .writer,
+    .series,
+    .pricing,
+    .release{
+        border-bottom: 1px solid rgb(209, 209, 209);
+        padding: .5rem 0%;
+    }
+
+    span{
+                font-size: .8rem;
+    }
+
+    .highlight{
+        color: $comic_highlight_color
+    }
+
+
+}
+
+.subIndex{
+    background-color: $comic_specs_bg;
+    border-right: .5px solid rgb(207, 207, 207);
+    
+    .index{
+        padding:  1rem;
+        border-right: .5px solid rgb(207, 207, 207);
+        
+        &:first-child{
+            border-left: .5px solid rgb(207, 207, 207);
+        }
+
+    }
+
+    h6{
+        font-size: .8rem;
+        color: gray;
+    }
+
+    .logo{
+        img{
+            max-height: 40px;
+            filter: contrast(0.5);
+        }
+    }
+}

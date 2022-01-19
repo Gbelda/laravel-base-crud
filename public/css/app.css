@@ -11492,3 +11492,147 @@ footer .socials .social_links h4 {
 .content_index img {
   width: 40px;
 }
+
+/***********************************************************************************
+                                  SHOW COMIC
+***********************************************************************************/
+.highlight_bg {
+  height: 60px;
+  background-color: #0282F9;
+}
+
+.content_container {
+  width: 55%;
+  margin: auto;
+}
+
+.content_header {
+  margin-top: -17.5rem;
+}
+
+.poster {
+  border: 1px solid white;
+  width: 175px;
+  position: relative;
+  margin-top: 15rem;
+}
+.poster img {
+  width: 100%;
+}
+.poster .sticker,
+.poster .gallery {
+  font-size: 0.8rem;
+  position: absolute;
+  color: white;
+  margin: 0;
+  background-color: #00A9D9;
+}
+.poster .sticker {
+  top: 0%;
+  left: 0%;
+  padding: 0% 5px;
+}
+.poster .gallery {
+  width: 100%;
+  bottom: 0%;
+  text-align: center;
+  padding: 2px 0%;
+}
+
+.main_content {
+  margin-bottom: 4rem;
+}
+.main_content .comic_title {
+  color: #003F5E;
+  font-weight: 600;
+  font-size: 1.7rem;
+}
+.main_content .price_info {
+  width: 100%;
+  background-color: #55BA59;
+  height: 40px;
+  border-bottom: 0.5px solid #505050;
+  margin-bottom: 1rem;
+}
+.main_content .price_info h6 {
+  margin: 0;
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+.main_content .price_info .status h6 {
+  color: #BAFD93;
+}
+.main_content .price_info .status .price {
+  color: white;
+}
+.main_content .price_info .availability {
+  border-left: 0.5px solid #505050;
+}
+.main_content .price_info .availability h6 {
+  color: white;
+}
+.main_content .comic_text {
+  font-size: 1rem;
+}
+
+.specifics {
+  padding-bottom: 5rem;
+  background-color: #F6F6F6;
+  border-top: 1px solid #cfcfcf;
+  border-bottom: 1px solid #cfcfcf;
+}
+.specifics h2 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #003F5E;
+  border-bottom: 1px solid #d1d1d1;
+  padding-bottom: 2rem;
+  padding-top: 1.5rem;
+}
+.specifics h6 {
+  color: #003F5E;
+  margin: 0;
+}
+.specifics .artists,
+.specifics .writers {
+  font-size: 0.8rem;
+  line-height: 1rem;
+}
+.specifics .artists a,
+.specifics .writers a {
+  color: #00A9D9;
+}
+.specifics .art,
+.specifics .writer,
+.specifics .series,
+.specifics .pricing,
+.specifics .release {
+  border-bottom: 1px solid #d1d1d1;
+  padding: 0.5rem 0%;
+}
+.specifics span {
+  font-size: 0.8rem;
+}
+.specifics .highlight {
+  color: #00A9D9;
+}
+
+.subIndex {
+  background-color: #F6F6F6;
+  border-right: 0.5px solid #cfcfcf;
+}
+.subIndex .index {
+  padding: 1rem;
+  border-right: 0.5px solid #cfcfcf;
+}
+.subIndex .index:first-child {
+  border-left: 0.5px solid #cfcfcf;
+}
+.subIndex h6 {
+  font-size: 0.8rem;
+  color: gray;
+}
+.subIndex .logo img {
+  max-height: 40px;
+  filter: contrast(0.5);
+}

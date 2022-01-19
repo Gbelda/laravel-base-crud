@@ -12,7 +12,7 @@
             </div>
             <div class="row comic space_evenly">
                 @foreach ($comics as $comic)
-                    <a href="#" class="col-2">
+                    <a href="{{ route('comics.show', ['comic' => $comic->id]) }}" class="col-2">
                         <div class="comic">
                             <div class="comic_image">
                                 <img src="{{ $comic['thumb'] }}" alt="">
