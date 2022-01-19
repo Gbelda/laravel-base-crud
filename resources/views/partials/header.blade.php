@@ -1,3 +1,9 @@
+<?php
+
+$indexes = ['characters', 'comics', 'movies', 'tv', 'games', 'collectibles', 'videos', 'fans', 'news', 'shop'];
+
+?>
+
 <header>
 
     <div class="additional">
@@ -14,16 +20,16 @@
     <div class="nav">
         <div class="container_main d-flex justify-content-between align-items-center">
             <div class="logo">
-                <img src="{{ asset('img/dc-logo.png') }}" alt="">
+                {{-- <img src="{{ asset('img/dc-logo.png') }}" alt=""> --}}
             </div>
 
             <ul class="index d-flex list-unstyled align-items-center justify-content-evenly">
                 @foreach ($indexes as $index)
                     <li class="">
-                        <a href="{{ route("$index") }}"
-                            id="{{ str_contains(Route::currentRouteName(), $index) ? 'active' : '' }}">
-                            {{ strtoupper($index) }}
-                        </a>
+                        {{-- <a href="{{ route("$index") }}"
+                            id="{{ str_contains(Route::currentRouteName(), $index) ? 'active' : '' }}"> --}}
+                        {{ strtoupper($index) }}
+                        {{-- </a> --}}
                     </li>
                 @endforeach
             </ul>

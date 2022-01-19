@@ -14,7 +14,7 @@
         rel="stylesheet">
 
     <!-- Styles -->
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="{{ asset('css/app.css') }}">
 </head>
 
 <body>
@@ -24,7 +24,7 @@
         @yield('content')
     </main>
 
-    @include('partials.footer')
+    {{-- @include('partials.footer') --}}
 </body>
 
 </html>

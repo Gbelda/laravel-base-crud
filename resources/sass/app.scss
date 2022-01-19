@@ -1,1 +1,202 @@
 //
+@use 'bootstrap';
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+
+}
+
+@import 'partials/variables';
+
+
+body{
+    // font-family: 'Open Sans Condensed', sans-serif;
+    font-family: sans-serif;
+}
+
+.container_main{
+    width: 70%;
+    margin: auto;
+}
+
+ul{
+    padding-left: 0%;
+    list-style: none;
+}
+
+a{
+  text-decoration: none;
+}
+
+header{
+    
+    .nav{
+        background-color: rgba(255, 255, 255, 0.918);
+        padding: 1rem 0rem;
+    
+        .logo{
+            img{
+                width: 80px;
+            }
+        }
+        
+        .index{
+            width: 100%;
+            margin-bottom: 0%;
+            padding: 0% 2rem;
+        
+            li{
+                list-style: none;
+                color: $nav_text_primary_color;
+                padding-bottom: 2.8rem;
+                font-weight: 600;
+
+                &:hover{
+                  color: $highlight_primary_color;
+                  border-bottom: 4px solid $highlight_primary_color;
+                }
+        
+            }
+        }
+        
+        .search{
+            height: 20px;
+            border-bottom: 2px solid $highlight_primary_color;
+            
+            input{
+                width: 120px;
+                border: none;
+        
+                &::placeholder{
+                text-align: end;
+                }
+            }
+            
+            
+            
+            img{
+                width: 20px;
+                filter: brightness(0);
+            }
+        }
+
+
+
+        #active{
+          border-bottom: 4px solid $highlight_primary_color;
+          color: $highlight_primary_color;
+        }
+    }
+    
+    .additional{
+        height: 15px;
+        background-color: $highlight_primary_color;
+    
+        h6{
+            font-size: .8rem;
+            margin-left: 3rem;
+            color: white;
+        }
+    }
+
+}
+
+
+.hero_img {
+    height: 380px;
+    background-image: url(../img/jumbotron.jpg);
+    background-size: cover;
+    background-position-x: center;
+}
+
+footer{
+
+    .ext_links {
+  background-image: url(/img/footer-bg.jpg);
+  height: 400px;
+
+  .index_container {
+    padding: 2rem 0px;
+    width: 100%;
+    background-image: url(/img/dc-logo-bg.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 590px;
+    height: 400px;
+
+    .index_section {
+      padding-right: 2rem;
+    }
+  }
+
+  .main_footer {
+    justify-content: space-between;
+  }
+
+  .footer_dc_logo {
+    width: 100%;
+    height: 400px;
+  }
+
+  h4 {
+    color: $text_primary_color;
+    font-size: 1.3rem;
+  }
+
+  h4,
+  #dc_comics {
+    padding-bottom: 1rem;
+  }
+
+  li {
+      list-style: none;
+    a {
+      font-size: 0.9rem;
+      color: rgb(136, 136, 136);
+      text-decoration: none;
+    }
+  }
+    }
+
+    .socials {
+  height: 120px;
+  background-color: $social_bg_color;
+
+  .container {
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  .signup_button {
+    width: 50%;
+
+    button {
+      font-size: 1.1rem;
+      color: $text_primary_color;
+      background: none;
+      border: 2px solid $highlight_primary_color;
+      padding: 1rem;
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+
+  .social_links {
+    justify-content: end;
+    width: 50%;
+
+    a {
+      margin-left: 2rem;
+    }
+
+    h4 {
+      line-height: 39px;
+      color: $highlight_primary_color;
+      font-size: 1.4rem;
+    }
+  }
+    }
+}
