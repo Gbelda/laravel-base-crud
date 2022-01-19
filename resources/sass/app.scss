@@ -34,6 +34,7 @@ header{
     .nav{
         background-color: rgba(255, 255, 255, 0.918);
         padding: 1rem 0rem;
+        margin-bottom: 2rem;
     
         .logo{
             img{
@@ -213,3 +214,91 @@ footer{
   }
     }
 }
+
+
+/************************************************************* 
+                            COMIC INDEX
+*************************************************************/
+
+#site_main{
+    background-color: $content_bg_color;
+}
+
+.comic {
+  margin: 2rem 0%;
+  .comic_image {
+    width: 200px;
+    height: 190px;
+    overflow: hidden;
+  }
+  .title {
+    font-size: 1rem;
+    width: 200px;
+    margin: 1rem 0%;
+  }
+
+  a{
+    color: white;
+  }
+}
+  
+  .content_section {
+    color: $text_primary_color;
+    padding: 3.5rem 0px;
+
+    .section_title {
+      width: 220px;
+      background-color: $highlight_primary_color;
+      margin-top: -4.5rem;
+      margin-bottom: 2rem;
+      h3 {
+        padding: 0.5rem 1rem;
+        text-align: center;
+        font-size: 1.3rem;
+      }
+    }
+
+    .load {
+      h4 {
+        margin: auto;
+        width: 200px;
+        background-color: $highlight_primary_color;
+        text-align: center;
+        padding: 0.5rem 0px;
+        font-size: 1.2rem;
+      }
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+
+  .content_index {
+    background-color: $highlight_primary_color;
+    padding: 2rem 0px;
+
+    .index_options {
+      justify-content: space-around;
+      align-items: center;
+
+      h5 {
+        color: $text_primary_color;
+        font-weight: normal;
+        padding-left: 10px;
+        font-size: 1rem;
+      }
+    }
+
+    .index_link {
+      display: flex;
+      align-items: center;
+    }
+
+    .locator_logo {
+      width: 30px;
+    }
+
+    img {
+      width: 40px;
+    }
+  }
