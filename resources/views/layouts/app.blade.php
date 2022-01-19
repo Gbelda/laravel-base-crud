@@ -21,6 +21,8 @@
     @include('partials.header')
 
     <main class="site_main">
+
+
         @yield('content')
     </main>
 

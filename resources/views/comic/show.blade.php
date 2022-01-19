@@ -1,6 +1,8 @@
 @extends('layouts.app')
 
 @section('content')
+    <div class="hero_img"></div>
+
     <div class="highlight_bg"></div>
 
     <div class="content_container content_header">

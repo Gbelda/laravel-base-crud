@@ -5,6 +5,8 @@
     <link rel="stylesheet" href="/css/homepage.css">
 
 @section('content')
+    <div class="hero_img"></div>
+
     <div id="site_main">
         <section class="content_section container">
             <div class="section_title">

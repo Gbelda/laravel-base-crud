@@ -11270,7 +11270,6 @@ a {
 header .nav {
   background-color: rgba(255, 255, 255, 0.918);
   padding: 1rem 0rem;
-  margin-bottom: 2rem;
 }
 header .nav .logo img {
   width: 80px;
@@ -11449,7 +11448,6 @@ footer .socials .social_links h4 {
   width: 220px;
   background-color: #0282F9;
   margin-top: -4.5rem;
-  margin-bottom: 2rem;
 }
 .content_section .section_title h3 {
   padding: 0.5rem 1rem;
@@ -11514,7 +11512,7 @@ footer .socials .social_links h4 {
   border: 1px solid white;
   width: 175px;
   position: relative;
-  margin-top: 15rem;
+  margin-bottom: 7rem;
 }
 .poster img {
   width: 100%;
