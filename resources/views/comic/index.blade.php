@@ -1,8 +1,5 @@
 @extends('layouts.app')
 
-@section('page-css')
-
-    <link rel="stylesheet" href="/css/homepage.css">
 
 @section('content')
     <div class="hero_img"></div>
@@ -33,8 +30,16 @@
                             <td>${{ $comic->price }}</td>
                             <td>{{ $comic->sale_date }}</td>
                             <td>
-                                <a href="{{ route('comics.show', ['comic' => $comic->id]) }}">view</a> |
-                                <a href="#">delete</a>
+                                <a name="view" id="view" class="btn btn-primary"
+                                    href="{{ route('comics.show', $comic->id) }}" role="button">
+                                    <i class="far fa-eye"></i>
+                                </a>
+                                <a name="" id="" class="btn btn-info" href="#" role="button">
+                                    <i class="far fa-edit"></i>
+                                </a>
+                                <a name="" id="" class="btn btn-danger" href="#" role="button">
+                                    <i class="far fa-trash-alt"></i>
+                                </a>
                             </td>
                         </tr>
                     @endforeach
