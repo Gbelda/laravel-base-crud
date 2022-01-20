@@ -40,8 +40,13 @@
                     @endforeach
                 </tbody>
             </table>
-            <div class="load">
-                <h4>ADD COMIC</h4>
+            {{ $comics->links() }}
+            <div class="create">
+                <h4>
+                    <a href="{{ route('comics.create') }}">
+                        ADD COMIC
+                    </a>
+                </h4>
             </div>
         </section>
     </div>

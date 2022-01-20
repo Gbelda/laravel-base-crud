@@ -1,3 +1,9 @@
+<?php
+
+$neutralImage = 'https://www.dccomics.com/sites/default/files/styles/current_series_grid_item192x192/public/default_images/DC_placeholder_series_573b3c5dac0485.40480935.jpg?itok=oRZ6eTCO';
+
+?>
+
 @extends('layouts.app')
 
 @section('content')
@@ -8,7 +14,7 @@
     <div class="content_container content_header">
 
         <div class="poster">
-            <img src="{{ $comic['thumb'] }}" alt="">
+            <img src="{{ $comic['thumb'] == null ? $neutralImage : $comic['thumb'] }}" alt="">
             <h6 class="sticker">COMIC BOOK</h6>
             <h6 class="gallery">VIEW GALLERY</h6>
         </div>

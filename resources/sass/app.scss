@@ -223,23 +223,9 @@ footer{
     background-color: $content_bg_color;
 }
 
-.comic {
-  margin: 2rem 0%;
-  .comic_image {
-    width: 200px;
-    height: 190px;
-    overflow: hidden;
-  }
-  .title {
-    font-size: 1rem;
-    width: 200px;
-    margin: 1rem 0%;
-  }
-
   a{
     color: white;
   }
-}
   
   .content_section {
     color: $text_primary_color;
@@ -256,7 +242,7 @@ footer{
       }
     }
 
-    .load {
+    .create {
       h4 {
         margin: auto;
         width: 200px;
@@ -271,35 +257,13 @@ footer{
     }
   }
 
-  .content_index {
-    background-color: $highlight_primary_color;
-    padding: 2rem 0px;
-
-    .index_options {
-      justify-content: space-around;
-      align-items: center;
-
-      h5 {
-        color: $text_primary_color;
-        font-weight: normal;
-        padding-left: 10px;
-        font-size: 1rem;
-      }
-    }
-
-    .index_link {
-      display: flex;
-      align-items: center;
-    }
-
-    .locator_logo {
-      width: 30px;
-    }
-
-    img {
-      width: 40px;
-    }
-  }
+/*************************************************************************************
+                                    CREATE COMIC
+**************************************************************************************/
+  
+.form-group{
+    margin-bottom: 2rem;
+}
 
 
   /***********************************************************************************
@@ -403,93 +367,4 @@ footer{
 
     }
 
-    // .advert{
-    //     img{
-    //         width: 100%;
-    //     }
-
-    //     h6{
-    //         font-weight: 600;
-    //         color: $nav_text_primary_color;
-    //     }
-    // }
-
-}
-
-.specifics{
-    padding-bottom: 5rem;
-    background-color: $comic_specs_bg;
-    border-top: 1px solid rgb(207, 207, 207);
-    border-bottom: 1px solid rgb(207, 207, 207);
-
-
-    h2{
-        font-size: 1.4rem;
-        font-weight: 600;
-        color: $comic_title_color;
-        border-bottom: 1px solid rgb(209, 209, 209);
-        padding-bottom: 2rem;
-        padding-top: 1.5rem;
-    }
-
-    h6{
-        color: $comic_title_color;
-        margin: 0;
-    }
-    
-    .artists,
-    .writers{
-        font-size: .8rem;
-        line-height: 1rem;
-
-        a{
-            color: $comic_highlight_color
-        }
-    }
-
-    .art,
-    .writer,
-    .series,
-    .pricing,
-    .release{
-        border-bottom: 1px solid rgb(209, 209, 209);
-        padding: .5rem 0%;
-    }
-
-    span{
-                font-size: .8rem;
-    }
-
-    .highlight{
-        color: $comic_highlight_color
-    }
-
-
-}
-
-.subIndex{
-    background-color: $comic_specs_bg;
-    border-right: .5px solid rgb(207, 207, 207);
-    
-    .index{
-        padding:  1rem;
-        border-right: .5px solid rgb(207, 207, 207);
-        
-        &:first-child{
-            border-left: .5px solid rgb(207, 207, 207);
-        }
-
-    }
-
-    h6{
-        font-size: .8rem;
-        color: gray;
-    }
-
-    .logo{
-        img{
-            max-height: 40px;
-            filter: contrast(0.5);
-        }
-    }
 }
