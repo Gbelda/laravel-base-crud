@@ -1,3 +1,9 @@
+<?php
+
+$neutralImage = 'https://www.dccomics.com/sites/default/files/styles/current_series_grid_item192x192/public/default_images/DC_placeholder_series_573b3c5dac0485.40480935.jpg?itok=oRZ6eTCO';
+
+?>
+
 @extends('layouts.app')
 
 
@@ -14,10 +20,10 @@
                     <a href="{{ route('comics.show', $comic->id) }}" class="col-2">
                         <div class="comic">
                             <div class="comic_image">
-                                <img src="{{ $comic['thumb'] }}" alt="">
+                                <img src="{{ $comic['thumb'] == null ? $neutralImage : $comic['thumb'] }}" alt="">
                             </div>
                             <h3 class="title">
-                                {{ $comic['series'] }}
+                                {{ $comic['series'] == null ? 'DC Comics' : $comic['series'] }}
                             </h3>
                         </div>
                     </a>
