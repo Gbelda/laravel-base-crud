@@ -6,8 +6,7 @@
             <h1>
                 Welcome to DC Comics
             </h1>
-            <a name="" id="" class="btn btn-primary" href="{{ route('comics.index') }}" role="button">Click for Comic
-                list</a>
+            <a name="" id="" class="btn btn-primary" href="{{ route('comics.index') }}" role="button">MY COMIC LIST</a>
         </div>
     </div>
 @endsection
