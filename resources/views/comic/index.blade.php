@@ -19,7 +19,7 @@
                         <th scope="col">TITLE</th>
                         <th scope="col">PRICE</th>
                         <th scope="col">SALE DATE</th>
-                        <th scope="col"></th>
+                        <th scope="col">ACTIONS</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -34,7 +34,8 @@
                                     href="{{ route('comics.show', $comic->id) }}" role="button">
                                     <i class="far fa-eye"></i>
                                 </a>
-                                <a name="" id="" class="btn btn-info" href="#" role="button">
+                                <a name="" id="" class="btn btn-info" href="{{ route('comics.edit', $comic->id) }}"
+                                    role="button">
                                     <i class="far fa-edit"></i>
                                 </a>
                                 <a name="" id="" class="btn btn-danger" href="#" role="button">
