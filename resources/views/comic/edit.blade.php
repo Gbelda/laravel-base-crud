@@ -8,8 +8,9 @@
                     EDIT COMIC
                 </h3>
             </div>
-            <form method="POST" action="#">
+            <form method="POST" action="{{ route('comics.update', $comic->id) }}">
                 @csrf
+                @method('PUT')
                 <div class="form-group">
                     <label for="title">TITLE</label>
                     <input type="text" class="form-control" id="title" value="{{ $comic->title }}" name="title">
