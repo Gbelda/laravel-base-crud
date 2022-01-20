@@ -11423,6 +11423,23 @@ footer .socials .social_links h4 {
   background-color: #1C1C1C;
 }
 
+.comic {
+  margin: 2rem 0%;
+}
+.comic .comic_image {
+  width: 200px;
+  height: 190px;
+  overflow: hidden;
+}
+.comic .title {
+  font-size: 1rem;
+  width: 200px;
+  margin: 1rem 0%;
+}
+.comic a {
+  color: white;
+}
+
 a {
   color: white;
 }
@@ -11441,7 +11458,8 @@ a {
   text-align: center;
   font-size: 1.3rem;
 }
-.content_section .create h4 {
+.content_section .create h4,
+.content_section .load h4 {
   margin: auto;
   width: 200px;
   background-color: #0282F9;
@@ -11449,7 +11467,8 @@ a {
   padding: 0.5rem 0px;
   font-size: 1.2rem;
 }
-.content_section .create:hover {
+.content_section .create:hover,
+.content_section .load:hover {
   cursor: pointer;
 }
 
