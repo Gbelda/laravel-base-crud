@@ -10,27 +10,40 @@
     <div id="site_main">
         <section class="content_section container">
             <div class="section_title">
-                <h3>CURRENT SERIES</h3>
+                <h3>
+                    MY COMICS
+                </h3>
             </div>
-            <div class="row comic space_evenly">
-                @foreach ($comics as $comic)
-                    <a href="{{ route('comics.show', ['comic' => $comic->id]) }}" class="col-2">
-                        <div class="comic">
-                            <div class="comic_image">
-                                <img src="{{ $comic['thumb'] }}" alt="">
-                            </div>
-                            <h3 class="title">
-                                {{ $comic['series'] }}
-                            </h3>
-                        </div>
-                    </a>
-                @endforeach
-            </div>
+
+            <table class="table table-dark">
+                <thead>
+                    <tr>
+                        <th scope="col">ID</th>
+                        <th scope="col">TITLE</th>
+                        <th scope="col">PRICE</th>
+                        <th scope="col">SALE DATE</th>
+                        <th scope="col"></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach ($comics as $comic)
+                        <tr>
+                            <th scope="row">{{ $comic->id }}</th>
+                            <td>{{ $comic->title }}</td>
+                            <td>${{ $comic->price }}</td>
+                            <td>{{ $comic->sale_date }}</td>
+                            <td>
+                                <a href="{{ route('comics.show', ['comic' => $comic->id]) }}">view</a> |
+                                <a href="#">delete</a>
+                            </td>
+                        </tr>
+                    @endforeach
+                </tbody>
+            </table>
             <div class="load">
-                <h4>LOAD MORE</h4>
+                <h4>ADD COMIC</h4>
             </div>
         </section>
-
     </div>
 
 @endsection

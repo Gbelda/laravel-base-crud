@@ -20,9 +20,7 @@
 <body>
     @include('partials.header')
 
-    <main class="site_main">
-
-
+    <main>
         @yield('content')
     </main>
 
