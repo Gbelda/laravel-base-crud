@@ -12,6 +12,7 @@
                 </h3>
             </div>
 
+            {{-- COMIC LIST TABLE --}}
             <table class="table table-dark">
                 <thead>
                     <tr>
