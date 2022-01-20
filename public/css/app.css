@@ -11541,3 +11541,7 @@ a {
 .main_content .comic_text {
   font-size: 1rem;
 }
+
+.modal {
+  color: black;
+}

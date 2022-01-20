@@ -38,9 +38,43 @@
                                     role="button">
                                     <i class="far fa-edit"></i>
                                 </a>
-                                <a name="" id="" class="btn btn-danger" href="#" role="button">
+                                <!-- Button trigger modal -->
+                                <button type="button" class="btn btn-danger" data-bs-toggle="modal"
+                                    data-bs-target="#delete{{ $comic->id }}">
                                     <i class="far fa-trash-alt"></i>
-                                </a>
+                                </button>
+
+                                <!-- Modal -->
+                                <div class="modal fade" id="delete{{ $comic->id }}" tabindex="-1" role="dialog"
+                                    aria-labelledby="delete{{ $comic->id }}" aria-hidden="true">
+                                    <div class="modal-dialog" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title">Delete - {{ $comic->title }}</h5>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                    aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <h6>
+                                                    WARNING!!: You are permanently deleting this Comic,
+                                                    <br> Are you sure?
+                                                </h6>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary"
+                                                    data-bs-dismiss="modal">Close</button>
+
+                                                <form method="post" action="{{ route('comics.destroy', $comic->id) }}">
+                                                    @csrf
+                                                    @method('DELETE')
+
+                                                    <button type="submit" class="btn btn-danger">Delete</button>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
                             </td>
                         </tr>
                     @endforeach
