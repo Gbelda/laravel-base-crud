@@ -53,7 +53,7 @@ class ComicController extends Controller
         //         $_comic->price = $validated->price;
         //         $_comic->sale_date = $validated->sale_date;
         //         $_comic->save();
-        return redirect()->route('comics.index');
+        return redirect()->route('comics.index')->with('message', 'Comic Added Successfully!');
     }
 
     /**
@@ -97,7 +97,7 @@ class ComicController extends Controller
 
         $comic->update($validated);
 
-        return redirect()->route('comics.index');
+        return redirect()->route('comics.index')->with('message', 'Comic Updated Successfully!');;
     }
 
     /**
@@ -110,6 +110,6 @@ class ComicController extends Controller
     {
         $comic->delete();
 
-        return redirect()->route('comics.index');
+        return redirect()->route('comics.index')->with('alert', 'Comic Deleted!!');
     }
 }
