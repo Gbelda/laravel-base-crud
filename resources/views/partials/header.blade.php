@@ -9,7 +9,7 @@ $indexes = ['characters', 'comics', 'movies', 'tv', 'games', 'collectibles', 'vi
     <div class="additional">
         <div class="container_main d-flex justify-content-end">
             <h6 class="fw-bold">
-                <a href="{{ route('comics.index') }}">ADMIN</a>
+                <a href="{{ route('admin.index') }}">ADMIN</a>
             </h6>
         </div>
     </div>

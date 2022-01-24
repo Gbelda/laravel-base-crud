@@ -17,4 +17,8 @@ class PageController extends Controller
 
         return view('comic.main', compact('comics'));
     }
+
+    public function adminIndex(){
+        return view('admin.index');
+    }
 }
