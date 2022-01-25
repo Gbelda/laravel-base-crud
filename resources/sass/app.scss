@@ -249,6 +249,7 @@ footer{
     color: $text_primary_color;
     padding: 3.5rem 0px;
 
+
     .section_title {
       width: 220px;
       background-color: $highlight_primary_color;
@@ -398,6 +399,10 @@ footer{
 ********************************************************************************************/
 
 .admin_main{
+
+      background-color: $content_bg_color;
+      color: white;
+
 
   .content{
     width: 100%;

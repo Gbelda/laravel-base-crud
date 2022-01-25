@@ -4,12 +4,11 @@ $neutralImage = 'https://www.dccomics.com/sites/default/files/styles/current_ser
 
 ?>
 
-@extends('layouts.app')
+@extends('layouts.adminApp')
 
 @section('content')
-    <div class="hero_img"></div>
 
-    <div class="highlight_bg"></div>
+
 
     <div class="content_container content_header">
 
@@ -20,7 +19,13 @@ $neutralImage = 'https://www.dccomics.com/sites/default/files/styles/current_ser
         </div>
 
         <div class="main_content d-flex justify-content-between ">
-            <div class="comic_description ">
+            <div class="poster col-3">
+                <img src="{{ $comic['thumb'] == null ? $neutralImage : $comic['thumb'] }}" alt="">
+                <h6 class="sticker">COMIC BOOK</h6>
+                <h6 class="gallery">VIEW GALLERY</h6>
+            </div>
+
+            <div class="comic_description col-9">
                 <h1 class="comic_title">
                     {{ $comic['title'] }}
                 </h1>
